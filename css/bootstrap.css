@@ -1356,6 +1356,12 @@ a.text-warning:hover {
 a.text-danger:hover {
   color: #843534;
 }
+
+/*.bizimdiv {
+  margin-right: auto;
+  margin-left: auto;
+} */
+
 .bg-primary {
   color: #fff;
   background-color: #337ab7;
