@@ -95,14 +95,14 @@
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Countries By News</h2>
                 <hr class="light">
-                <p class="text-faded">Here is a peculiar story of what people talk with respect to who they are.
+                <p class="text-faded" style="text-align:justify">Here is a peculiar story of what people talk with respect to who they are.
                   We would like to present you some interesting facts about 20 Enlish speaking countires in the world,
                   namely United States, Ireland, Australia, Canada, India, New Zealand, Sri Lanka, Singapore,Philippines,
                   Ghana, Nigeria, Kenya, Hong Kong, Jamaica, Pakistan, Bangladesh, Malaysia and Tanzania; and connection of those
                   with their trending topics appered in their online newspapers, blogs and magazines.
                 </p>
 
-                <p class="text-faded">
+                <p class="text-faded" style="text-align:justify">
                   News data is collected from <a href="https://corpus.byu.edu/now/" style="color: rgb(255,255,255)"> Now Corpus </a> for
                   one year period (November 2015 to October 2016). Facts of countires are extracted from
                   <a href="https://www.cia.gov/library/publications/the-world-factbook/" style="color: rgb(250,250,250)">
@@ -121,13 +121,20 @@
   <section class="bg-primary2" id="DS">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Treding Topics of Countries</h2>
-                <hr class="light">
-                <p class="text-faded">
 
-                  pie charts of countries
-                </p>
+          <div class="text-center" style="width: 100%; overflow: hidden;">
+              <h2 class="section-heading">Trending Topics by Countries</h2>
+              <hr class="light">
+              <div  style="width: 100%; float: left;">
+
+                  <iframe width="100%" height="300" frameborder="0" scrolling="no" src="plots/donutSon.html"></iframe>
+             </div>
+
+
+             <div  style="margin-left: 600px;">
+               Yazısını da buraya yazalım
+             </div>
+
 
             </div>
         </div>
@@ -329,19 +336,40 @@
           <div class="text-center" style="width: 100%; overflow: hidden;">
               <h2 class="section-heading">Now Corpus</h2>
               <hr class="light">
-              <div  style="width: 400px; float: left;">
-                  <p class="text-faded"> <br> Start Bootstrap has everything you need to get your new website up and running in no time!
-                     All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-                     Start Bootstrap has everything you need to get your new website up and running in no time!
-                        All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-                        Start Bootstrap has everything you need to get your new website up and running in no time!
-                           All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+              <div  style="width: 500px; float: left; text-align:justify;">
+                  <p class="text-faded"> <br>
+                    The NOW Corpus (News on the Web) is composed of 6,979,691,862 billion words of data,
+                    and it is now growing by 160-170 million words per month, or about 1.6 billion words per year).
+                    <br> <br>
+                    In order to create the corpus, scripts run every hour to get URLs for new magazine and newspaper articles
+                    from Google News, for about 9,000-10,000 new texts each day. Downloaded texts are cleaned by JusText
+                    (to remove boilerplate material); tagged and lemmatized; and then integrated into existing relational database.
+                    <br> <br>
+                    The dataset we have in the cluster is for 6 years from 2010-2016(until October) of 20 different English speaking countries.
+                    It has lexicon, source, text and wlp (word, lemma, PoS tag) data. The data is in txt format and size of 5.9 million words.
+                    (~200GB) It is processed via following modifications:
+                      <ul>
+                          <li>News are groupped by country and time(a period of year)</li>
+                          <li>Title and url information of the news groupped as source information data</li>
+                          <li>For analysis(extract frequency of the words in the text) wlp data is used </li>
+                      </ul>
+                  </p>
+
+                  <p  class="text-faded">
+                    <b>Why last year?</b> <br>
+                    We integrated Now Corpus with another dataset, Factbook. It has facts groupped per year however the data is
+                    not coherrent and consistent, eg population record exist for 2016 for some countires while ...,2015,2016 for others.
+                    Since we intented to compare countries with each other in terms of news topics, we chose where we had the most consistent
+                    records on the Factbook, which is 2016.
+                  </p>
+
+
                </div>
-               <div  style="margin-left: 410px;">
+               <div  style="margin-left: 510px;">
                     <!-- <iframe width="300" height="400" src="img/m2.html"></iframe>
                      <!--<iframe width="1000" height="600" frameborder="0" scrolling="no" src="//plot.ly/~camligorkem/16.embed"></iframe> -->
-
-                     <iframe  width="800" height="400" frameborder="0" scrolling="no" src="//plot.ly/~camligorkem/16.embed"></iframe>
+                     NOW CORPUS SHAPE OF EARTH
+                     <!-- <iframe  width="800" height="400" frameborder="0" scrolling="no" src="//plot.ly/~camligorkem/16.embed"></iframe> -->
 
               </div>
          </div>
