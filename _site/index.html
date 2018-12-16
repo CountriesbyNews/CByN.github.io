@@ -172,7 +172,7 @@
               <hr class="light">
               <div  style="width: 300px; float: right; text-align:justify;">
                   <p class="text-faded">
-                    <br> <br> <br> <br> <br> <br>
+                    <br> 
                     We integrated Now Corpus with another dataset, Factbook.
                     It has facts groupped per year however the data is
                     not coherrent and consistent, eg population record exist
@@ -188,7 +188,7 @@
                   </p>
                </div>
                <div  style="float:left">
-                     <iframe  width="800px" height="800px" frameborder="0" scrolling="no" src="plots/maps_article_nums.html"></iframe>
+                     <iframe  width="800px" height="500px" frameborder="0" scrolling="no" src="plots/maps_article_nums.html"></iframe>
               </div>
         </div>
 
@@ -372,15 +372,23 @@
                 <hr class="light">
                 <div style="float: left, width: 100%; text-align=justify">
                   <p>
-                    <br>
-                    dçsnglösngkjbbbbbbbbbbbbbbbbbbbbbbbbbbj
-                    kkkkkkkkkkkkkkkkkkkkkkkkk  dçsnglösngkjbbbbbb
-                    sdöjgbsfmnb djsngkjvndf  jfnkgn
+                    It's time to merge two datasets and see if there can be found mind blowing,reasonable results.
+                    We conducted pairwise Spearman Correlation  Testfor each features of Factbook data and
+                    each topic found from News data. Spearman is chosen over Pearson because of
+                    it is superiority to detect monotonic increase or decrease in our data.
+                    Results are shown on the below.
+                  </p>
+
+                  <p>
+                    Significant and marginally significant correlations are drawn according to p-values of
+                    test (&lt;0.05 &tilda;0.5).
+                    We also chose those have z-scores more/less than plus/minus 0.25 as
+                    of interest regardless of their significance.
                   </p>
 
                 </div>
 
-              
+
             </div>
         </div>
     </div>
@@ -390,16 +398,15 @@
     <div class="container">
         <div class="row">
           <div class="text-center" style="width: 100%; overflow: hidden;">
-              <div  style="width: 200px; float: right; text-align:justify;">
+              <div  style="float: right; text-align:justify;">
                   <p class="text-faded"> <br>
-                      heyoooooooooooo   heyoooooooooooo   heyoooooooooooo   heyoooooooooooo
-                        heyoooooooooooov   heyoooooooooooo
+
                   </p>
                </div>
 
 
-               <div  style="margin-right: 250px;">
-                  <iframe  width="900px" height="600px" frameborder="0" scrolling="no" src="plots/labelled-heatmap_website.html"></iframe>
+               <div  style="float:center">
+                  <iframe  width="100%" height="600px" frameborder="0" scrolling="no" src="plots/labelled-heatmap-fixed.html"></iframe>
               </div>
          </div>
         </div>
@@ -414,9 +421,22 @@
                 <hr class="light">
                 <div  style="width: 450px; float: left; text-align:justify;">
                     <p class="text-faded">
-                      <br>Start Bootstrap has everything you need to get your new website up and running in no time!
-                       All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-                       rt Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                      <br>
+                      POLITICS: percentage of political news per year for all news per country
+                      <br>
+                      NET MIGRATION RATE: percentage difference in between the number of immigrants
+                      and the number of emigrants per year per population.
+                      <br>
+                      CORRELATION: 0.503
+                      <br>
+                      P-value: 0.067*
+
+                      <br><br>
+                      Countries who have more migration rate have more media coverage on politics.
+                      Issues related to immagrants might account for some subtitles of political
+                      news or arguments for those receiving countries.
+
+                    </p>
                  </div>
                  <div  style="margin-left: 500px;">
                        <iframe  width="700px" height="450px" frameborder="0" scrolling="no" src="plots/Net_migration_rate-vs-POLITICS.html"></iframe>
@@ -433,10 +453,22 @@
                   <h2 class="section-heading">Are sports for wealthy people?</h2>
                   <hr class="light">
                   <div  style="width: 450px; float: right; text-align:justify;">
-                      <p class="text-faded">
-                        <br>Start Bootstrap has everything you need to get your new website up and running in no time!
-                         All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-                         rt Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                    <p class="text-faded">
+                      <br>
+                      SPORTS: percentage of sports news per year for all news per country
+                      <br>
+                      GDP PER CAPITA: in dollar
+                      <br>
+                      CORRELATION: 0.50
+                      <br>
+                      P-value: 0.049***
+
+                      <br><br>
+                      When the country wealth increases the media coverage
+                      percentage of sports in those countries increases. Some people
+                      are really crazy about sports (football :)).
+
+                    </p>
                    </div>
                    <div  style="margin-right: 500px;">
                          <iframe  width="700px" height="450px" frameborder="0" scrolling="no" src="plots/GDP_per_capita-vs-SPORTS.html"></iframe>
@@ -450,13 +482,25 @@
     <div class="container">
         <div class="row">
           <div class="text-center" style="width: 100%; overflow: hidden;">
-              <h2 class="section-heading">Are we playing or are we watching? <br>#ThisIsWhyWePlay</h2>
+              <h2 class="section-heading">Are we playing or are we watching?</h2>
               <hr class="light">
               <div  style="width: 450px; float: left; text-align:justify;">
-                  <p class="text-faded">
-                    <br>Start Bootstrap has everything you need to get your new website up and running in no time!
-                     All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-                     rt Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                <p class="text-faded">
+                  <br>
+                  SPORTS: percentage of sports news per year for all news per country
+                  <br>
+                  INTERNET USERS: percentage of country population who has internet access
+                  <br>
+                  CORRELATION: 0.57
+                  <br>
+                  P-value: 0.021***
+
+                  <br><br>
+                  Countries having high internet user percetange, have also higher media
+                  coverage percentage in sports.
+
+                </p>
+
                </div>
 
                <div  style="margin-left: 500px;">
@@ -475,10 +519,22 @@
             <h2 class="section-heading">Young, wild & free <br>#SocialLife </h2>
               <hr class="light">
               <div  style="width: 450px; float: right; text-align:justify;">
-                  <p class="text-faded">
-                    <br>Start Bootstrap has everything you need to get your new website up and running in no time!
-                     All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-                     rt Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                <p class="text-faded">
+                  <br>
+                  SOCIAL_LIF/DAILY: percentage of daily news per year for all news per country
+                  <br>
+                  AGE STRUCTURE15-24: percentage of country population of age between 15 to 24
+                  <br>
+                  CORRELATION: 0.47
+                  <br>
+                  P-value: 0.0504*
+
+                  <br><br>
+                  Social Life / Daily media coverage percentage is
+                  higher in the countries having high young people percentage.
+
+                </p>
+
                </div>
                <div  style="margin-right: 500px;">
                      <iframe  width="700px" height="450px" frameborder="0" scrolling="no" src="plots/Age_structure15-24-vs-SOCIAL_LIFE-DAILY.html"></iframe>
@@ -497,10 +553,21 @@
             <h2 class="section-heading">When too many people...</h2>
               <hr class="light">
               <div  style="width: 450px; float: left; text-align:justify;">
-                  <p class="text-faded">
-                    <br>Start Bootstrap has everything you need to get your new website up and running in no time!
-                     All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-                     rt Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                <p class="text-faded">
+                    <br>
+                    ENTERTAINMENT/ART/MAGAZINE: percentage of magazine/art news per year for all news per country
+                    <br>
+                    POPULATION: country population
+                    <br>
+                    CORRELATION: -0.57
+                    <br>
+                    P-value: 0.034***
+
+                    <br><br>
+                    When population is high in a country, the country talks less about
+                    entertainment/art and magazine topics. It might be getting hard to find subjects
+                    that can interest everbody or there is a huge population bias of India.
+                  </p>
                </div>
 
                <div  style="margin-left: 500px;">
@@ -518,10 +585,23 @@
               <h2 class="section-heading">Do men care more about the money?</h2>
               <hr class="light">
               <div  style="width: 450px; float: right; text-align:justify;">
-                  <p class="text-faded">
-                    <br>Start Bootstrap has everything you need to get your new website up and running in no time!
-                     All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-                     rt Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                <p class="text-faded">
+                  <br>
+                  ECONOMY: percentage of economy news per year for all news per country
+                  <br>
+                  SEXT RATIO: male/female proportion
+                  <br>
+                  CORRELATION: 0.667
+                  <br>
+                  P-value: 0.007***
+
+                  <br><br>
+                  When the male/female ratio in overall population increases,
+                  the media coverage in economy increases.
+
+
+                </p>
+
                </div>
                <div  style="margin-right: 500px;">
                      <iframe  width="700px" height="450px" frameborder="0" scrolling="no" src="plots/Sex_ratio-vs-ECONOMY.html"></iframe>
@@ -540,10 +620,21 @@
             <h2 class="section-heading"> Is legal being swept under the carpet?</h2>
               <hr class="light">
               <div  style="width: 450px; float: left; text-align:justify;">
-                  <p class="text-faded">
-                    <br>Start Bootstrap has everything you need to get your new website up and running in no time!
-                     All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-                     rt Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                  <p>
+                    <br>
+                    LEGAL/LAW: percentage of legal/law related news per year for all
+                    news per country
+                    <br>
+                    UNEMPLOYMNET RATE: percentage unemployment rate in the country
+                    <br>
+                    CORRELATION: -0.553
+                    <br>
+                    P-value: 0.049***
+                    <br><br>
+                    In the countries in which unemployment rate is high tends
+                    to have less media coverage in Legal/Law.
+
+                  </p>
                </div>
                <div  style="margin-left: 500px;">
                      <iframe  width="700px" height="450px" frameborder="0" scrolling="no" src="plots/Unemployment_rate-vs-LEGAL-LAW.html"></iframe>
@@ -561,10 +652,23 @@
             <h2 class="section-heading">Take care of the elderly...</h2>
               <hr class="light">
               <div  style="width: 450px; float: right; text-align:justify;">
-                  <p class="text-faded">
-                    <br>Start Bootstrap has everything you need to get your new website up and running in no time!
-                     All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-                     rt Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                <p>
+                  <br>
+                  HEALTH/MEDICAL: percentage of health/medical related news per year
+                  for all news per country
+                  <br>
+                  POPULATION GROWTH RATE: percentage unemployment rate in the country
+                  <br>
+                  CORRELATION: -0.63
+                  <br>
+                  P-value: 0.028***
+                  <br><br>
+                  Countries who has less population growth rate tends
+                  to have more media coverage in Health/Medical. If lowness of population
+                  growth rate is due to high old age population then news might treat health
+                  related topics of old people.
+
+                </p>
                </div>
                <div  style="margin-right: 500px;">
                      <iframe  width="700px" height="450px" frameborder="0" scrolling="no" src="plots/Population_growth_rate-vs-HEALTH-MEDICAL.html"></iframe>
