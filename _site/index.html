@@ -227,34 +227,39 @@
   <section class="bg-primary" id="FB">
     <div class="container">
         <div class="row">
-          <div class="text-center" style="width: 100%; overflow: hidden;">
-              <h2 class="section-heading">FactBook</h2>
-              <hr class="light">
-              <div  style="width: 550px; float: left; text-align:justify;">
-                  <ol style="font-size:16px">
-                      <li>People and Society:</li>
-                        <ul>Population </ul>
-                        <ul>Age structure </ul>
-                        <ul>Median age </ul>
-                        <ul>Population growth rate </ul>
-                        <ul>Birth rate </ul>
-                        <ul>Death rate </ul>
-                        <ul>Sex ratio </ul>
-                        <ul>Net migration rate </ul>
-                        <ul>Life expectancy at birth </ul>
-                      <li>Economy:</li>
-                        <ul>GDP - per capita (PPP) </ul>
-                        <ul>Unemployment rate </ul>
-                        <ul>Inflation rate (consumer prices) </ul>
-                      <li>Energy:</li>
-                        <ul>Electricity - from other renewable source </ul>
-                        <ul>Carbon dioxide emissions from consumption of energy </ul>
-                      <li>Communications:</li>
-                          <ul>Internet users </ul>
-                    </ol>
 
+          <div class="text-center" style="width: 100%; overflow: hidden;">
+            <h2 class="section-heading"> Factbook Facts</h2>
+              <hr class="light">
+              <div  style="width: 400px; float:left ;text-align:left;">
+                <br>
+                <ol style="font-size:16px">
+                    <li>People and Society:</li>
+                      <ul>Population </ul>
+                      <ul>Age structure </ul>
+                      <ul>Median age </ul>
+                      <ul>Population growth rate </ul>
+                      <ul>Birth rate </ul>
+                      <ul>Death rate </ul>
+                      <ul>Sex ratio </ul>
+                      <ul>Net migration rate </ul>
+                      <ul>Life expectancy at birth </ul>
+                    <li>Economy:</li>
+                      <ul>GDP - per capita (PPP) </ul>
+                      <ul>Unemployment rate </ul>
+                      <ul>Inflation rate (consumer prices) </ul>
+                    <li>Energy:</li>
+                      <ul>Electricity - from other renewable source </ul>
+                      <ul>Carbon dioxide emissions from consumption of energy </ul>
+                    <li>Communications:</li>
+                        <ul>Internet users </ul>
+                  </ol>
                </div>
-         </div>
+               <div  style="float:right;">
+                     <iframe  width="600px" height="600px" frameborder="0" scrolling="no" src="plots/fact_plots.html"></iframe>
+              </div>
+          </div>
+
         </div>
     </div>
 </section>
@@ -386,8 +391,8 @@
                 <hr class="light">
                 <div style="float: left, width: 100%; text-align=justify">
                   <p>
-                    It's time to merge two datasets and see if there can be found mind blowing,reasonable results.
-                    We conducted pairwise Spearman Correlation  Testfor each features of Factbook data and
+                    It's time to merge two datasets and see if there can be found mind blowing yet reasonable results.
+                    We conducted pairwise Spearman Correlation  Test for each features of Factbook data and
                     each topic found from News data. Spearman is chosen over Pearson because of
                     it is superiority to detect monotonic increase or decrease in our data.
                     Results are shown on the below.
@@ -395,7 +400,7 @@
 
                   <p>
                     Significant and marginally significant correlations are drawn according to p-values of
-                    test (&lt;0.05 &tilda;0.5).
+                    test (&lt;0.05 ~;0.05).
                     We also chose those have z-scores more/less than plus/minus 0.25 as
                     of interest regardless of their significance.
                   </p>
@@ -694,43 +699,75 @@
     </div>
 </section>
 
-  <section class="bg-primary" id="DS">
-    <div class="container">
-        <div class="row">
-            <div class="float:left; text-center">
-                <h2 class="section-heading">Little Doubt ???</h2>
-                <hr class="light">
-                <p class="text-faded">
-                    ananı avradı meczup
-                </p>
-
-
-            </div>
-        </div>
-    </div>
-</section>
-
 
   <!-- Methodology-->
-  <section class="bg-primary2" id="Method">
+  <section class="bg-primary" id="Method">
     <div class="container">
         <div class="row">
             <div class="text-center" style="width: 100%; overflow: hidden;">
                 <h2 class="section-heading">Methodology</h2>
                 <hr class="light">
-                <div  style="width: 400px; float: left;">
-                    <p class="text-faded"> <br> Start Bootstrap has everything you need to get your new website up and running in no time!
-                       All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-                       Start Bootstrap has everything you need to get your new website up and running in no time!
-                          All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-                          Start Bootstrap has everything you need to get your new website up and running in no time!
-                             All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                 </div>
-                 <div  style="margin-left: 410px;">
-                      <!-- <iframe width="300" height="400" src="img/m2.html"></iframe>
-                       <!--<iframe width="1000" height="600" frameborder="0" scrolling="no" src="//plot.ly/~camligorkem/16.embed"></iframe> -->
+                <div  style="width: 450px; float: left; text-align:left">
+                    <p class="text-faded"> <br>
+                      This project is performed through several steps.
+                    </p>
+                      <ol style="font-size:16px">
+                          <li> Data Exploration </li>
+                          <li> Data Source Analysis </li>
+                          <li> Topic Modelling </li>
+                          <li> Topic Assignment</li>
+                          <li> Correlation and Reasoning </li>
+                          <li> Data Story and Website</li>
+                      </ol>
 
-                       <iframe  width="800" height="400" frameborder="0" scrolling="no" src="//plot.ly/~camligorkem/16.embed"></iframe>
+                      <h3> Data Exploration </h3>
+                      <p class=text-faded>
+                      We chose News On the Web data among others offered in the ADA cluster.
+                      Since we believe data science for social good, we looked for alternative
+                      data source to produce more meaningful and insigthful results so added Factbook.
+                      </p>
+
+                      <h3> Data Source Analysis </h3>
+                      <p class="text-faded">
+                      First step was to discover what we had and the best way to make use of it.
+                      We examined sufficiency of data and biases exsist in this step.
+                      </p>
+
+                      <h3> Topic Modelling </h3>
+                      <p class="text-faded">
+                      Data has Word-Lem-Pos format which is crucial for topic modelling.
+                      Since data is too big to process in personal computers, we used Spark
+                      and build-in Spark libraries (LDA Model) on ADA cluster. We constructed
+                      and evaluated multiple models with various parameters (number of topics, number of iteration, corpus pruning with multiple percentages, optimizers et),
+                      run and got results then progressed further in local. To find out more about about topic modelling
+                      please visit <a href="https://github.com/camligorkem/ADA_2018_Project" style="color: rgb(255,200,200)"> our repository</a>
+                      </p>
+
+                 </div>
+
+
+                 <div  style="width: 450px; float: right; text-align:justify">
+
+
+                    <h3> Topic Assignment </h3>
+                    <p class="text-faded">
+                      We run our best model for every country then accoring to words discovered by model
+                      we assigned human-understandable news classes to each one of them. In case of hesistation,
+                      we checked actual articles on the web then decided.
+                    </p>
+                    <h3> Correlation and Reasoning  </h3>
+                    <p class="text-faded">
+                      We used Facts that we can interpret with our topics, then merged both datasets.
+                      Before start reasoning, however, we also try multiple categorization of Factbook data
+                      to see if Simpson Paradox etc and to prevent extreme values of facts (eg population India)
+                      biased our results. To see various categorization, please visit  <a href="https://github.com/camligorkem/ADA_2018_Project" style="color: rgb(255,200,200)"> our repository</a>
+                    </p>
+
+                    <h3> Data Story and Website </h3>
+                    <p class="text-faded">
+                      As a last step, we decided to prepared a data story. Last couple of days allocated for the project
+                      was spent to create comprehensible and informative graphs/charts as well as a website.
+                    </p>
 
                 </div>
            </div>
@@ -745,42 +782,48 @@
         <div class="row">
             <div class=" text-center">
                 <h2 class="section-heading">Team AdaGirls</h2>
-                <hr class="primary">
+                <i class="fa fa-4x fa-heart wow bounceIn text-primary"></i>
+                <h3>Made with passion</h3>
+                <p class="text-muted"></p>
+                <!--<hr class="primary"> -->
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
+            <div class="col-lg-3 col-md-6 text-center" style="margin-left:50px" >
+                <div class="service-box" >
                     <!--<i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i> -->
-                    <img src="images/world-map-of-cities-at-night.jpg" alt="dlab" width="130" height="180">
+                    <img src="images/gorkem.jpg" alt="foto" width="100%" height="100%">
                     <h3>Gorkem Camli</h3>
                     <p class="text-muted"> MSc Data Science</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
+            <div class="col-lg-3 col-md-6 text-center" style="margin-left:100px">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary"></i>
+                    <!--<i class="fa fa-4x fa-paper-plane wow bounceIn text-primary"></i> -->
+                    <img src="images/ezgi.jpg" alt="foto" width="100%" height="100%">
                     <h3>Nihal Ezgi Yuceturk</h3>
                     <p class="text-muted">MSc Computer Science </p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
+            <div class="col-lg-3 col-md-6 text-center" style="margin-left:100px">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary"></i>
+                    <!--<i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary"></i>-->
+                    <img src="images/arzu2.jpg" alt="foto" width="100%" height="100%">
                     <h3>Arzu Guneysu Ozgur</h3>
                     <p class="text-muted">PhD Robotics</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
+            <!-- <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
+                  <br> <br> <br> <br> <br> <br> <br>
                     <i class="fa fa-4x fa-heart wow bounceIn text-primary"></i>
-                    <!--<h3>Made with passion</h3> -->
+                    <h3>Made with passion</h3>
                     <p class="text-muted"></p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
