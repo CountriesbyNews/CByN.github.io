@@ -1,18 +1,51 @@
 <section class="bg-primary" id="DS">
     <div class="container">
         <div class="row">
-
           <div class="text-center" style="width: 100%; overflow: hidden;">
+              <h2 class="section-heading">Bias Attention</h2>
+              <hr class="light">
+              <div  style="width: 480px; float: right; text-align:justify;">
+                  <p class="text-faded">
+                    <br> <br>
+                    Graph on the left shows how many unique website are scrapted to collect news data
+                    per country and also internet usage of the country.  As can be seen, for some countries
+                    like Jamaica, Bangladesh and Tanzania, number of unique websites are quite low as well
+                    as the internet usage. Especially the former, introduces a huge bias to topic distribution of
+                    that country. For example, dominant topic on the news appeared as TECHNOLOGY/SCIENCE/SOCIAL MEDIA
+                    in Tanzania. However this is because of those websites where news are collected are particulary
+                    tech forms or blogs. Those kind of biases exist for each country but of course their effects are not
+                    as severe as of Tanzania. When the number of unique sources increases, bias of those resourses decrease
+                    since they likely to cover various aspects of news better.
 
-              <div  style="width:500px; float: right; text-align=justify">
-                Yazısını da buraya yazalım Yazısını da buraya yazalım Yazısını da buraya
-                 yazalımYazısını da buraya yazalım Yazısını da buraya yazalım Yazısını da buraya yazalım
-                 Yazısını da buraya yazalım Yazısını da buraya yazalım Yazısını da buraya yazalım Yazısını da buraya yazalım
-
-             </div>
-
-
-            </div>
+                  </p>
+               </div>
+               <div  style="margin-right: 550px;">
+                     <iframe  width="700px" height="500px" frameborder="0" scrolling="no" src="plots/multiple-internet-usage.html"></iframe>
+              </div>
         </div>
-    </div>
+
+        <div class="text-center" style="margin-left:200px; width: 800px;text-align:justify;">
+            <p class="text-faded" style="text-align:justify;">
+              <br>
+              Another point to keep in mind when analysing this work is that number of topics is not same for all countries
+              present. Some have 7 topic class (Bangladesh) whereas some have 11 (US), in between 7 to 13. This is not because
+              different topic modelling is used per country but rather, topics found by LDA model are assigned multiple classes.
+              In generel, 7 classes is used for LDA model whereas 13 topic classes created by us accoring to words found by LDA
+              per class. We examined top 10 words belonging to a topic found by LDA and then named this topic as POLITICS or
+              INTERNATIONAL or both with some percentage.
+              In this way we achived followings:
+              <ol >
+                 <li>Alley the imbalance in the number unique source and articles per country</li>
+                 <li>Seperate and identified topics better  </li>
+                 <li>Make topic generalization and comparison easier </li>
+               </ol>
+
+            </p>
+         </div>
+
+
+
+
+        </div>
+        </div>
 </section>

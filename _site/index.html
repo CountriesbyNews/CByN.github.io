@@ -88,35 +88,165 @@
     </div>
 </header>
 
-  <!--Data Story About-->
-  <section class="bg-primary" id="DS">
+  <!--Introduction-->
+  <section class="bg-primary">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Countries By News</h2>
                 <hr class="light">
-                <p class="text-faded" style="text-align:justify">Here is a peculiar story of what people talk with respect to who they are.
-                  We would like to present you some interesting facts about 20 Enlish speaking countires in the world,
+                <p class="text-faded" style="text-align:justify">
+                  Here is a peculiar story of what people talk with respect to who they are.
+                  We would like to present you some interesting facts about 20 English speaking countires in the world,
                   namely United States, Ireland, Australia, Canada, India, New Zealand, Sri Lanka, Singapore, Philippines,
                   Ghana, Nigeria, Kenya, Hong Kong, Jamaica, Pakistan, Bangladesh, Malaysia and Tanzania; and connection of those
                   with their trending topics appered in their online newspapers, blogs and magazines.
                 </p>
 
-                <p class="text-faded" style="text-align:justify">
-                  News data is collected from <a href="https://corpus.byu.edu/now/" style="color: rgb(50,100,100)"> NOW Corpus </a> for
-                  one year period (November 2015 to October 2016). Facts of countires are extracted from
-                  <a href="https://www.cia.gov/library/publications/the-world-factbook/" style="color: rgb(50,100,100)">
-                  The World Factbook </a> of CIA covering the same time period. For more information about data processing and
-                  methodology please visit <a href="#Method" style="color: rgb(50,100,100)">Methods</a> section.
+              <p class="text-faded" style="text-align:justify">
+                In the newspaper and magazine articles we cover more than events,
+                we share what we are doing, what we are interested in and what matters
+                to us as a society. Our aim in this project is to see how the news content
+                changes for countries over time and is there a connection between country
+                profiles and the news published. Our motivation behind this project is to understand,
+                the underlying profile of the published news content: the topics of the news,
+                most commonly used words and whether these information change between countries or course of time.
+                We aim to see if country specific information and published news are somehow correlated or a
+                good newspaper/article is now a world talking to itself?
+              </p>
 
-
-                </p>
-
-                <a href="#DS" class="btn btn-default btn-xl">Get Started!</a>
+              <p class="text-faded" style="text-align:justify">
+                We processed and analysed following data sets.
+                News data is taken from <a href="https://corpus.byu.edu/now/" style="color: rgb(255,200,200)"> NOW Corpus </a> for
+                one year period (November 2015 to October 2016). For more information please visit
+                <a href="#NC" style="color: rgb(255,200,200)">News</a> section.
+                Facts of countires are extracted from
+                <a href="https://www.cia.gov/library/publications/the-world-factbook/" style="color: rgb(255,200,200)">
+                The World Factbook </a> of CIA covering the same time period. For more information please visit
+                <a href="#FB" style="color: rgb(255,200,200)">Countries</a> section.
+                To see statistical and mathematical methods we used on data processing, topic modelling and
+                correlations please visit <a href="#Method" style="color: rgb(255,200,200)">Methods</a> section.
+              </p>
+                  <!-- <a href="#DS" class="btn btn-default btn-xl">Go to Data Story!</a> --> 
             </div>
         </div>
     </div>
 </section>
+
+  <!--News-->
+  <section class="bg-primary2" id="NC">
+    <div class="container">
+        <div class="row">
+          <div class="text-center" style="width: 100%; overflow: hidden;">
+              <h2 class="section-heading">NOW Corpus</h2>
+              <hr class="light">
+              <div  style="width: 450px; float: left; text-align:justify;">
+                  <p class="text-faded"> <br>
+                    The NOW Corpus (News on the Web) is composed of 6,979,691,862 billion words of data,
+                    and it is now growing by 160-170 million words per month, or about 1.6 billion words per year).
+                    <br> <br>
+                    In order to create the corpus, scripts run every hour to get URLs for new magazine and newspaper articles
+                    from Google News, for about 9,000-10,000 new texts each day. Downloaded texts are cleaned by JusText
+                    (to remove boilerplate material); tagged and lemmatized; and then integrated into existing relational database.
+                    <br> <br>
+                    The dataset we have in the cluster is for 6 years from 2010-2016(until October) of 20 different English speaking countries.
+                    It has lexicon, source, text and wlp (word, lemma, PoS tag) data. The data is in txt format and size of 5.9 million words.
+                    (~200GB)
+                  </p>
+               </div>
+               <div  style="margin-left: 500px;">
+                 <br>
+                <!-- <iframe  width="800" height="400" frameborder="0" scrolling="no" src="//plot.ly/~camligorkem/16.embed"></iframe> -->
+                <img src="./images/NowCorpus2.jpg" alt="WordsWorld" style="width:650px;height:450px;">
+              </div>
+         </div>
+    </div>
+</section>
+
+  <section class="bg-primary" id="NC">
+    <div class="container">
+        <div class="row">
+          <div style="width: 100%; overflow: hidden;">
+              <h2 class="section-heading" style="margin-left: 550px;">Why last year?</h2>
+              <hr class="light">
+              <div  style="width: 500px; float: left; text-align:justify;">
+                <p  class="text-faded">
+                  We integrated Now Corpus with another dataset, Factbook. It has facts groupped per year however the data is
+                  not coherrent and consistent, eg population record exist for 2016 for some countires while ...,2015,2016 for others.
+                  Since we intented to compare countries with each other in terms of news topics, we chose where we had the most consistent
+                  records on the Factbook, which is 2016.
+                </p>
+               </div>
+         </div>
+    </div>
+</section>
+
+  <!-- Factbook-->
+  <section class="bg-primary2" id="FB">
+    <div class="container">
+        <div class="row">
+          <div class="text-center" style="width: 100%; overflow: hidden;">
+              <h2 class="section-heading">FactBook</h2>
+              <hr class="light">
+              <div  style="width: 550px; float: right; text-align:justify;">
+                  <p class="text-faded"> <br>
+                    The World Factbook provides information on the geography, history, people,
+                    government, economy, communications, transportation, military, and transnational
+                    issues for 267 world entities. Among them, we selected 20 countries whose internet media
+                    coverage data exists in the Now Corpus data. For each country, Factbook provides us more than
+                    100 facts under the different main topics. after examining through these facts, we decided to select
+                    those we can correlate with news topics.
+                  </p>
+
+               </div>
+               <div  style="margin-right: 600px;">
+                 <br>
+                <!-- <iframe  width="800" height="400" frameborder="0" scrolling="no" src="//plot.ly/~camligorkem/16.embed"></iframe> -->
+                <img src="./images/wordcloud.png" alt="WordsWorld" style="width:500px;height:350px;">
+              </div>
+         </div>
+        </div>
+    </div>
+</section>
+
+  <section class="bg-primary" id="FB">
+    <div class="container">
+        <div class="row">
+          <div class="text-center" style="width: 100%; overflow: hidden;">
+              <h2 class="section-heading">FactBook</h2>
+              <hr class="light">
+              <div  style="width: 550px; float: left; text-align:justify;">
+                  <ol style="font-size:16px">
+                      <li>People and Society:</li>
+                        <ul>Population </ul>
+                        <ul>Age structure </ul>
+                        <ul>Median age </ul>
+                        <ul>Population growth rate </ul>
+                        <ul>Birth rate </ul>
+                        <ul>Death rate </ul>
+                        <ul>Sex ratio </ul>
+                        <ul>Net migration rate </ul>
+                        <ul>Life expectancy at birth </ul>
+                      <li>Economy:</li>
+                        <ul>GDP - per capita (PPP) </ul>
+                        <ul>Unemployment rate </ul>
+                        <ul>Inflation rate (consumer prices) </ul>
+                      <li>Energy:</li>
+                        <ul>Electricity - from other renewable source </ul>
+                        <ul>Carbon dioxide emissions from consumption of energy </ul>
+                      <li>Communications:</li>
+                          <ul>Internet users </ul>
+                    </ol>
+
+               </div>
+         </div>
+        </div>
+    </div>
+</section>
+
+
+  <!--Data Story About-->
+
 
   <section class="bg-primary2" id="DS">
     <div class="container">
@@ -125,6 +255,8 @@
           <div class="text-center" style="width: 100%; overflow: hidden;">
               <h2 class="section-heading">Trending Topics by Countries</h2>
               <hr class="light">
+              <br>
+              Following charts shows topics appered on the news and percentage of them by country.
               <div  style="width: 100%; float: all left;">
 
                   <iframe width="100%" height="1100 px" frameborder="0" scrolling="no" src="plots/donutAll.html"></iframe>
@@ -138,20 +270,53 @@
   <section class="bg-primary" id="DS">
     <div class="container">
         <div class="row">
-
           <div class="text-center" style="width: 100%; overflow: hidden;">
+              <h2 class="section-heading">Bias Attention</h2>
+              <hr class="light">
+              <div  style="width: 480px; float: right; text-align:justify;">
+                  <p class="text-faded">
+                    <br> <br>
+                    Graph on the left shows how many unique website are scrapted to collect news data
+                    per country and also internet usage of the country.  As can be seen, for some countries
+                    like Jamaica, Bangladesh and Tanzania, number of unique websites are quite low as well
+                    as the internet usage. Especially the former, introduces a huge bias to topic distribution of
+                    that country. For example, dominant topic on the news appeared as TECHNOLOGY/SCIENCE/SOCIAL MEDIA
+                    in Tanzania. However this is because of those websites where news are collected are particulary
+                    tech forms or blogs. Those kind of biases exist for each country but of course their effects are not
+                    as severe as of Tanzania. When the number of unique sources increases, bias of those resourses decrease
+                    since they likely to cover various aspects of news better.
 
-              <div  style="width:500px; float: right; text-align=justify">
-                Yazısını da buraya yazalım Yazısını da buraya yazalım Yazısını da buraya
-                 yazalımYazısını da buraya yazalım Yazısını da buraya yazalım Yazısını da buraya yazalım
-                 Yazısını da buraya yazalım Yazısını da buraya yazalım Yazısını da buraya yazalım Yazısını da buraya yazalım
-
-             </div>
-
-
-            </div>
+                  </p>
+               </div>
+               <div  style="margin-right: 550px;">
+                     <iframe  width="700px" height="500px" frameborder="0" scrolling="no" src="plots/multiple-internet-usage.html"></iframe>
+              </div>
         </div>
-    </div>
+
+        <div class="text-center" style="margin-left:200px; width: 800px;text-align:justify;">
+            <p class="text-faded" style="text-align:justify;">
+              <br>
+              Another point to keep in mind when analysing this work is that number of topics is not same for all countries
+              present. Some have 7 topic class (Bangladesh) whereas some have 11 (US), in between 7 to 13. This is not because
+              different topic modelling is used per country but rather, topics found by LDA model are assigned multiple classes.
+              In generel, 7 classes is used for LDA model whereas 13 topic classes created by us accoring to words found by LDA
+              per class. We examined top 10 words belonging to a topic found by LDA and then named this topic as POLITICS or
+              INTERNATIONAL or both with some percentage.
+              In this way we achived followings:
+              <ol >
+                 <li>Alley the imbalance in the number unique source and articles per country</li>
+                 <li>Seperate and identified topics better  </li>
+                 <li>Make topic generalization and comparison easier </li>
+               </ol>
+
+            </p>
+         </div>
+
+
+
+
+        </div>
+        </div>
 </section>
 
   <section class="bg-primary2" id="DS">
@@ -404,117 +569,6 @@
     </div>
 </section>
 
-  <!--News-->
-  <section class="bg-primary2" id="NC">
-    <div class="container">
-        <div class="row">
-          <div class="text-center" style="width: 100%; overflow: hidden;">
-              <h2 class="section-heading">NOW Corpus</h2>
-              <hr class="light">
-              <div  style="width: 450px; float: left; text-align:justify;">
-                  <p class="text-faded"> <br>
-                    The NOW Corpus (News on the Web) is composed of 6,979,691,862 billion words of data,
-                    and it is now growing by 160-170 million words per month, or about 1.6 billion words per year).
-                    <br> <br>
-                    In order to create the corpus, scripts run every hour to get URLs for new magazine and newspaper articles
-                    from Google News, for about 9,000-10,000 new texts each day. Downloaded texts are cleaned by JusText
-                    (to remove boilerplate material); tagged and lemmatized; and then integrated into existing relational database.
-                    <br> <br>
-                    The dataset we have in the cluster is for 6 years from 2010-2016(until October) of 20 different English speaking countries.
-                    It has lexicon, source, text and wlp (word, lemma, PoS tag) data. The data is in txt format and size of 5.9 million words.
-                    (~200GB)
-                  </p>
-               </div>
-               <div  style="margin-left: 500px;">
-                 <br>
-                <!-- <iframe  width="800" height="400" frameborder="0" scrolling="no" src="//plot.ly/~camligorkem/16.embed"></iframe> -->
-                <img src="./images/NowCorpus2.jpg" alt="WordsWorld" style="width:650px;height:450px;">
-              </div>
-         </div>
-    </div>
-</section>
-
-  <section class="bg-primary" id="NC">
-    <div class="container">
-        <div class="row">
-          <div style="width: 100%; overflow: hidden;">
-              <h2 class="section-heading" style="margin-left: 550px;">Why last year?</h2>
-              <hr class="light">
-              <div  style="width: 500px; float: left; text-align:justify;">
-                <p  class="text-faded">
-                  We integrated Now Corpus with another dataset, Factbook. It has facts groupped per year however the data is
-                  not coherrent and consistent, eg population record exist for 2016 for some countires while ...,2015,2016 for others.
-                  Since we intented to compare countries with each other in terms of news topics, we chose where we had the most consistent
-                  records on the Factbook, which is 2016.
-                </p>
-               </div>
-         </div>
-    </div>
-</section>
-
-  <!-- Factbook-->
-  <section class="bg-primary2" id="FB">
-    <div class="container">
-        <div class="row">
-          <div class="text-center" style="width: 100%; overflow: hidden;">
-              <h2 class="section-heading">FactBook</h2>
-              <hr class="light">
-              <div  style="width: 550px; float: right; text-align:justify;">
-                  <p class="text-faded"> <br>
-                    The World Factbook provides information on the geography, history, people,
-                    government, economy, communications, transportation, military, and transnational
-                    issues for 267 world entities. Among them, we selected 20 countries whose internet media
-                    coverage data exists in the Now Corpus data. For each country, Factbook provides us more than
-                    100 facts under the different main topics. after examining through these facts, we decided to select
-                    those we can correlate with news topics.
-                  </p>
-
-               </div>
-               <div  style="margin-right: 600px;">
-                 <br>
-                <!-- <iframe  width="800" height="400" frameborder="0" scrolling="no" src="//plot.ly/~camligorkem/16.embed"></iframe> -->
-                <img src="./images/wordcloud.png" alt="WordsWorld" style="width:500px;height:350px;">
-              </div>
-         </div>
-        </div>
-    </div>
-</section>
-
-  <section class="bg-primary" id="FB">
-    <div class="container">
-        <div class="row">
-          <div class="text-center" style="width: 100%; overflow: hidden;">
-              <h2 class="section-heading">FactBook</h2>
-              <hr class="light">
-              <div  style="width: 550px; float: left; text-align:justify;">
-                  <ol style="font-size:16px">
-                      <li>People and Society:</li>
-                        <ul>Population </ul>
-                        <ul>Age structure </ul>
-                        <ul>Median age </ul>
-                        <ul>Population growth rate </ul>
-                        <ul>Birth rate </ul>
-                        <ul>Death rate </ul>
-                        <ul>Sex ratio </ul>
-                        <ul>Net migration rate </ul>
-                        <ul>Life expectancy at birth </ul>
-                      <li>Economy:</li>
-                        <ul>GDP - per capita (PPP) </ul>
-                        <ul>Unemployment rate </ul>
-                        <ul>Inflation rate (consumer prices) </ul>
-                      <li>Energy:</li>
-                        <ul>Electricity - from other renewable source </ul>
-                        <ul>Carbon dioxide emissions from consumption of energy </ul>
-                      <li>Communications:</li>
-                          <ul>Internet users </ul>
-                    </ol>
-
-               </div>
-         </div>
-        </div>
-    </div>
-</section>
-
 
   <!-- Methodology-->
   <section class="bg-primary2" id="Method">
@@ -549,7 +603,7 @@
     <div class="container">
         <div class="row">
             <div class=" text-center">
-                <h2 class="section-heading">Team</h2>
+                <h2 class="section-heading">Team AdaGirls</h2>
                 <hr class="primary">
             </div>
         </div>
@@ -559,7 +613,8 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                    <!--<i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i> -->
+                    <img src="images/world-map-of-cities-at-night.jpg" alt="dlab" width="130" height="180">
                     <h3>Gorkem Camli</h3>
                     <p class="text-muted"> MSc Data Science</p>
                 </div>
@@ -704,7 +759,7 @@
             <div class="text-center">
                 <h2 class="section-heading"> Project ADA Fall 2018</h2>
                 <hr class="primary">
-                <p> Ecole polytechnique Fédérale de Lausanne, Switzerland</p>
+                <p> Ecole Polytechnique Fédérale de Lausanne, Switzerland</p>
             </div>
 
         <div class="text-center">
