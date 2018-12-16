@@ -83,7 +83,6 @@
 
               With the face paced technology the world becomes more and more connected. <br> Let's find out if newspapers are still a <it> nation </it> talking to
               itself or a <it> world </it> talking to itself?</p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
         </div>
     </div>
 </header>
@@ -170,25 +169,32 @@
           <div class="text-center" style="width: 100%; overflow: hidden;">
               <h2 class="section-heading">2016</h2>
               <hr class="light">
-              <div  style="width: 300px; float: right; text-align:justify;">
+              <div  style="width: 350px; float: right; text-align:justify;">
                   <p class="text-faded">
-                    <br> 
+                    <br>
                     We integrated Now Corpus with another dataset, Factbook.
                     It has facts groupped per year however the data is
-                    not coherrent and consistent, eg population record exist
-                    for 2016 for some countires while 2014,2015,2016 for others.
+                    not coherrent and consistent. 
                     Since we intented to compare countries with each other in terms
                     of news topics, we chose where we had the most consistent
                     records on the Factbook, which is 2016.
 
                     <br> <br>
                     Graph on the left shows how many article/news collected per country of interest
-                    per month.
+                    per month.We can observe several things:
+                    Tanzania, Kenya, Ghana has very few articles all the time compared
+                        to other countries such as Canada, USA, Great Britain and India.
+                        We can see from here as well that our data is not equally distributed
+                        neither within months nor overall. It is important to keep in mind that
+                        for some countries, since the data is limited the interpretations made
+                         here could be misleading compared to the actual news media.
+                         According to our data the article counts are fewer (paler colors)
+                       in the winter season in the overall most countries.
 
                   </p>
                </div>
                <div  style="float:left">
-                     <iframe  width="800px" height="500px" frameborder="0" scrolling="no" src="plots/maps_article_nums.html"></iframe>
+                     <iframe  width="800px" height="600px" frameborder="0" scrolling="no" src="plots/maps_article_nums.html"></iframe>
               </div>
         </div>
 
@@ -281,6 +287,30 @@
               </div>
          </div>
 
+         <div  style="margin-left: 250px; float: center; width: 700px;text-align:justify">
+             <p class="text-faded"> <br>
+               In the topic distribution map we showed the most published topic in each country for each month.
+               From the Topic Distribution Map for each Country over time we observed that
+overall, the most frequently published articles for each country doesn't change very often.
+This can show in which topics are countries are mostly talking based on the data we have.
+ Some examples, could be USA and India talking Politics most whereas for Australia the topics
+  diverge between Economy, Tech and Entertainment/Art/Magazine and they mostly talk Economy in
+  the beginning of the year whereas they tend to publish more on Tech/Science articles in the second term of the year.
+For some countries the most published topics in every month doesn't change over time.
+For example, in South Africa we see that Sports is always the most published topic for 2016.
+Note: One thing to consider is that if the number of unique web resources that the data collected for
+a country is limited and it is a web resource on a specific topic, the most frequent topics may seem
+not to be changing. This might be the case for South Africa since it has lower number of unique resources
+ and if these resources also publishes only on specific topics.
+
+
+             </p>
+
+          </div>
+
+
+
+
 
           <div class="text-center" style="width: 100%; overflow: hidden;">
               Following charts shows topics appered on the news and percentage of them by country in a year.
@@ -339,12 +369,28 @@
          </div>
 
 
+
+
+         <div  style="margin-left: 250px; float: center; width: 700px;text-align:justify">
+             <p class="text-faded"> <br>
+ From below map, we see the most published news topic for each country in the overall
+ 1 year data we used. For each year, we shared the most frequent and meaningful
+  5 words LDA find. These 5 words are after excluding the person names and less
+  unreasonable words but each these 5 words are within 10-15 most frequent word range for that topic.
+             </p>
+
+          </div>
          <div class="text-center" style="width: 100%; overflow: hidden;">
 
               <div  style="float:center;">
                  <iframe  width="800px" height="600px" frameborder="0" scrolling="no" src="plots/maps_freq_words.html"></iframe>
              </div>
         </div>
+
+
+
+
+
 
 
 
@@ -389,7 +435,7 @@
             <div class="text-center">
                 <h2 class="section-heading">Correlation Means Correlation</h2>
                 <hr class="light">
-                <div style="float: left, width: 100%; text-align=justify">
+                <div style="margin-left:250px; float:center ; width: 700px; text-align=justify">
                   <p>
                     It's time to merge two datasets and see if there can be found mind blowing yet reasonable results.
                     We conducted pairwise Spearman Correlation  Test for each features of Factbook data and
@@ -400,7 +446,7 @@
 
                   <p>
                     Significant and marginally significant correlations are drawn according to p-values of
-                    test (&lt;0.05 ~;0.05).
+                    test (&lt;0.05, ~0.05).
                     We also chose those have z-scores more/less than plus/minus 0.25 as
                     of interest regardless of their significance.
                   </p>
@@ -770,6 +816,38 @@
                     </p>
 
                 </div>
+           </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Conclusion-->
+  <section class="bg-primary2" id="Method">
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+                <h2 class="section-heading">Conclusion</h2>
+                <hr class="light">
+                <div  style="margin-left: 250px; float: center; width: 700px;text-align:justify">
+                    <p class="text-faded"> <br>
+                      Overall, from the analysis of these two datasets we can say that there are some meaningful correlation between the
+                      Country Profiles and the News content published. For example, we can see that Countries
+                      having higher net migration rates tends to publish more on Politics, Countries having younger
+                      people profile have a leaning towards to publish more on Social Life and Daily news etc.
+                      Therefore, we can conclude that from the data we have, News may have a lean toward and reflect
+                      some truth behind the saying "A good newspaper is a nation talking to itself" since there are
+                      some significant trends between topics published and country profiles.
+                      </p>
+                      <p>
+                      On the other hand, these
+                      correlations found are based on limited data and may not be exactly reflecting countries
+                      behaviors. Also, some other limitations might be human interpretations on the topic name
+                      assignment and the number of countries is only 20 therefore, not sufficient to do a general claim
+                      such as News are become more Globalized with the changing Technology.
+                    </p>
+
+                 </div>
            </div>
         </div>
     </div>
